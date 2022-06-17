@@ -1,6 +1,7 @@
 <table class="table">
     <thead>
       <tr>
+        <th scope="col">CarId</th>
         <th scope="col">CarName</th>
         <th scope="col">BrandName</th>
         <th scope="col">ColorName</th>
@@ -9,6 +10,7 @@
     </thead>
     <tbody *ngFor="let carDetail of details">
       <tr>
+        <th>{{carDetail.carId}}</th>
         <th>{{carDetail.carName}}</th>
         <td>{{carDetail.brandName}}</td>
         <td>{{carDetail.colorName}}</td>
